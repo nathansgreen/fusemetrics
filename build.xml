@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<project name="fusemetrics" default="all">
+  
+  
+  <property file="build.properties"/>
+  <!-- Uncomment the following property if no tests compilation is needed -->
+  <!-- 
+  <property name="skip.tests" value="true"/>
+   -->
+  
+  <!-- Compiler options -->
+  
+  <property name="compiler.debug" value="on"/>
+  <property name="compiler.generate.no.warnings" value="off"/>
+  <property name="compiler.args" value=""/>
+  <property name="compiler.max.memory" value="128m"/>
+  <patternset id="ignored.files">
+    <exclude name="**/CVS/**"/>
+    <exclude name="**/SCCS/**"/>
+    <exclude name="**/RCS/**"/>
+    <exclude name="**/rcs/**"/>
+    <exclude name="**/.DS_Store/**"/>
+    <exclude name="**/.svn/**"/>
+    <exclude name="**/.sbas/**"/>
+    <exclude name="**/.IJI.*/**"/>
+    <exclude name="**/vssver.scc/**"/>
+    <exclude name="**/vssver2.scc/**"/>
+  </patternset>
+  <patternset id="compiler.resources">
+    <include name="**/?*.properties"/>
+    <include name="**/?*.xml"/>
+    <include name="**/?*.gif"/>
+    <include name="**/?*.png"/>
+    <include name="**/?*.jpeg"/>
+    <include name="**/?*.jpg"/>
+    <include name="**/?*.html"/>
+    <include name="**/?*.dtd"/>
+    <include name="**/?*.tld"/>
+  </patternset>
+  
+  <!-- JDK definitions -->
+  
+  <property name="jdk.bin.1.5" value="${jdk.home.1.5}/bin"/>
+  <path id="jdk.classpath.1.5">
+    <fileset dir="${jdk.home.1.5}">
+      <include name="lib/deploy.jar"/>
+      <include name="lib/dt.jar"/>
+      <include name="lib/jce.jar"/>
+      <include name="lib/plugin.jar"/>
+      <include name="lib/sa-jdi.jar"/>
+      <include name="../Classes/charsets.jar"/>
+      <include name="../Classes/classes.jar"/>
+      <include name="../Classes/dt.jar"/>
+      <include name="../Classes/jce.jar"/>
+      <include name="../Classes/jconsole.jar"/>
+      <include name="../Classes/jsse.jar"/>
+      <include name="../Classes/laf.jar"/>
+      <include name="../Classes/ui.jar"/>
+      <include name="lib/ext/apple_provider.jar"/>
+      <include name="lib/ext/dnsns.jar"/>
+      <include name="lib/ext/localedata.jar"/>
+      <include name="lib/ext/sunjce_provider.jar"/>
+      <include name="lib/ext/sunpkcs11.jar"/>
+    </fileset>
+  </path>
+  
+  <property name="project.jdk.home" value="${jdk.home.1.5}"/>
+  <property name="project.jdk.bin" value="${jdk.bin.1.5}"/>
+  <property name="project.jdk.classpath" value="jdk.classpath.1.5"/>
+  
+
+
+  <taskdef name="groovyc"
+         classname="org.codehaus.groovy.ant.Groovyc"
+         classpathref="library.groovy.classpath"/>
+   
+
+  <!-- Project Libraries -->
+  
+  <path id="library.junit.classpath">
+    <pathelement location="/Users/johnbr/dev/lib/junit-3.8.1/junit.jar"/>
+  </path>
+  
+  <path id="library.xom.classpath">
+    <pathelement location="${basedir}/lib/xom-1.1.jar"/>
+  </path>
+  
+  <path id="library.jfreechart.classpath">
+    <pathelement location="${basedir}/lib/jfreechart-1.0.9/jfreechart-1.0.9-swt.jar"/>
+    <pathelement location="${basedir}/lib/jfreechart-1.0.9/jfreechart-1.0.9.jar"/>
+    <pathelement location="${basedir}/lib/jfreechart-1.0.9/swtgraphics2d.jar"/>
+    <pathelement location="${basedir}/lib/jfreechart-1.0.9/jcommon-1.0.12.jar"/>
+    <pathelement location="${basedir}/lib/jfreechart-1.0.9/itext-2.0.6.jar"/>
+  </path>
+  
+  
+  <!-- Global Libraries -->
+  
+  <path id="library.groovy.classpath">
+    <pathelement location="/usr/local/groovy-1.5.4/embeddable/groovy-all-1.5.4.jar"/>
+  </path>
+  
+  
+  <!-- Modules -->
+  
+  
+  <!-- Module FuseMetrics -->
+  
+  <dirname property="module.fusemetrics.basedir" file="${ant.file}"/>
+  
+  
+  <property name="module.jdk.home.fusemetrics" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.fusemetrics" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.fusemetrics" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.fusemetrics" value="${compiler.args}"/>
+  
+  <property name="fusemetrics.output.dir" value="${module.fusemetrics.basedir}/out/production/FuseMetrics"/>
+  <property name="fusemetrics.testoutput.dir" value="${module.fusemetrics.basedir}/out/test/FuseMetrics"/>
+  
+  <path id="fusemetrics.module.bootclasspath">
+    
+  </path>
+  
+  <path id="fusemetrics.module.classpath">
+    <path refid="${module.jdk.classpath.fusemetrics}"/>
+    <path refid="library.groovy.classpath"/>
+    <path refid="library.junit.classpath"/>
+    <path refid="library.xom.classpath"/>
+    <path refid="library.jfreechart.classpath"/>
+  </path>
+  
+  <path id="fusemetrics.runtime.module.classpath">
+    <path refid="${module.jdk.classpath.fusemetrics}"/>
+    <pathelement location="${fusemetrics.output.dir}"/>
+    <pathelement location="${fusemetrics.testoutput.dir}"/>
+    <path refid="library.groovy.classpath"/>
+    <path refid="library.junit.classpath"/>
+    <path refid="library.xom.classpath"/>
+    <path refid="library.jfreechart.classpath"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.fusemetrics">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.fusemetrics">
+    <patternset refid="excluded.from.module.fusemetrics"/>
+  </patternset>
+  
+  <path id="fusemetrics.module.sourcepath">
+    <dirset dir="${module.fusemetrics.basedir}">
+      <include name="src"/>
+      <include name="test"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.fusemetrics" depends="compile.module.fusemetrics.production,compile.module.fusemetrics.tests" description="Compile module FuseMetrics"/>
+  
+  <target name="compile.module.fusemetrics.production" description="Compile module FuseMetrics; production classes">
+    <mkdir dir="${fusemetrics.output.dir}"/>
+    <groovyc classpathref="fusemetrics.module.classpath"  verbose="true" destdir="${fusemetrics.output.dir}"  memorymaximumsize="${compiler.max.memory}"  >
+      <classpath refid="fusemetrics.module.classpath"/>
+      <src refid="fusemetrics.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.fusemetrics"/>
+    </groovyc>
+    
+    <copy todir="${fusemetrics.output.dir}">
+      <fileset dir="${module.fusemetrics.basedir}/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.fusemetrics.basedir}/test">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.fusemetrics.tests" depends="compile.module.fusemetrics.production" description="compile module FuseMetrics; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.fusemetrics" description="cleanup module">
+    <delete dir="${fusemetrics.output.dir}"/>
+    <delete dir="${fusemetrics.testoutput.dir}"/>
+  </target>
+
+   <target name="jar">
+      <jar destfile="dist/fusemetrics.jar"  basedir="${fusemetrics.output.dir}" />
+   </target>
+
+  <target name="init" description="Build initialization">
+    <!-- Perform any build initialization in this target -->
+  </target>
+  
+  <target name="clean" depends="clean.module.fusemetrics" description="cleanup all"/>
+  
+  <target name="all" depends="init, clean, compile.module.fusemetrics, jar" description="build all"/>
+</project>
