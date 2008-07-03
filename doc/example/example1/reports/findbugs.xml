@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="1.0.0" sequence="0" timestamp="1166498718921" analysisTimestamp="1166498718968" release="">
+  <Project filename="&lt;&lt;unnamed project&gt;&gt;">
+    <Jar>C:\dev\projects\projects-3.2\sligo\target\words.jar</Jar>
+    <SrcDir>C:\dev\projects\projects-3.2\sligo\$src\java</SrcDir>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" abbrev="DLS" category="STYLE">
+    <Class classname="org.discoblog.words.dbunit.generator.DbUnitSeedFileGenerator">
+      <SourceLine classname="org.discoblog.words.dbunit.generator.DbUnitSeedFileGenerator" start="-1" end="-1" startBytecode="-1" endBytecode="-1" sourcefile="DbUnitSeedFileGenerator.java" sourcepath="org/discoblog/words/dbunit/generator/DbUnitSeedFileGenerator.java"/>
+    </Class>
+    <Method classname="org.discoblog.words.dbunit.generator.DbUnitSeedFileGenerator" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="org.discoblog.words.dbunit.generator.DbUnitSeedFileGenerator" start="19" end="28" startBytecode="0" endBytecode="22" sourcefile="DbUnitSeedFileGenerator.java" sourcepath="org/discoblog/words/dbunit/generator/DbUnitSeedFileGenerator.java"/>
+    </Method>
+    <LocalVariable name="driverClass" register="1" pc="6" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="org.discoblog.words.dbunit.generator.DbUnitSeedFileGenerator" start="19" end="19" startBytecode="5" endBytecode="5" sourcefile="DbUnitSeedFileGenerator.java" sourcepath="org/discoblog/words/dbunit/generator/DbUnitSeedFileGenerator.java"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" abbrev="DLS" category="STYLE">
+    <Class classname="org.discoblog.words.dbunit.generator.PartialSeedFileGenerator">
+      <SourceLine classname="org.discoblog.words.dbunit.generator.PartialSeedFileGenerator" start="-1" end="-1" startBytecode="-1" endBytecode="-1" sourcefile="PartialSeedFileGenerator.java" sourcepath="org/discoblog/words/dbunit/generator/PartialSeedFileGenerator.java"/>
+    </Class>
+    <Method classname="org.discoblog.words.dbunit.generator.PartialSeedFileGenerator" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="org.discoblog.words.dbunit.generator.PartialSeedFileGenerator" start="20" end="32" startBytecode="0" endBytecode="27" sourcefile="PartialSeedFileGenerator.java" sourcepath="org/discoblog/words/dbunit/generator/PartialSeedFileGenerator.java"/>
+    </Method>
+    <LocalVariable name="driverClass" register="1" pc="6" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="org.discoblog.words.dbunit.generator.PartialSeedFileGenerator" start="20" end="20" startBytecode="5" endBytecode="5" sourcefile="PartialSeedFileGenerator.java" sourcepath="org/discoblog/words/dbunit/generator/PartialSeedFileGenerator.java"/>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="1" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="org.discoblog.words.ddlutil.DDLReader">
+      <SourceLine classname="org.discoblog.words.ddlutil.DDLReader" start="-1" end="-1" startBytecode="-1" endBytecode="-1" sourcefile="DDLReader.groovy" sourcepath="org/discoblog/words/ddlutil/DDLReader.groovy"/>
+    </Class>
+    <Field classname="org.discoblog.words.ddlutil.DDLReader" name="__timeStamp" signature="Ljava.lang.Long;" isStatic="true">
+      <SourceLine classname="org.discoblog.words.ddlutil.DDLReader" start="-1" end="-1" startBytecode="-1" endBytecode="-1" sourcefile="DDLReader.groovy" sourcepath="org/discoblog/words/ddlutil/DDLReader.groovy"/>
+    </Field>
+    <SourceLine classname="org.discoblog.words.ddlutil.DDLReader" start="-1" end="-1" startBytecode="14" endBytecode="14" sourcefile="DDLReader.groovy" sourcepath="org/discoblog/words/ddlutil/DDLReader.groovy"/>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="1" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="org.discoblog.words.report.WordReport">
+      <SourceLine classname="org.discoblog.words.report.WordReport" start="-1" end="-1" startBytecode="-1" endBytecode="-1" sourcefile="WordReport.groovy" sourcepath="org/discoblog/words/report/WordReport.groovy"/>
+    </Class>
+    <Field classname="org.discoblog.words.report.WordReport" name="__timeStamp" signature="Ljava.lang.Long;" isStatic="true">
+      <SourceLine classname="org.discoblog.words.report.WordReport" start="-1" end="-1" startBytecode="-1" endBytecode="-1" sourcefile="WordReport.groovy" sourcepath="org/discoblog/words/report/WordReport.groovy"/>
+    </Field>
+    <SourceLine classname="org.discoblog.words.report.WordReport" start="-1" end="-1" startBytecode="14" endBytecode="14" sourcefile="WordReport.groovy" sourcepath="org/discoblog/words/report/WordReport.groovy"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" abbrev="DLS" category="STYLE">
+    <Class classname="test.org.discoblog.words.dao.benchmark.DBUnitSetUpBenchmarkTest">
+      <SourceLine classname="test.org.discoblog.words.dao.benchmark.DBUnitSetUpBenchmarkTest" start="-1" end="-1" startBytecode="-1" endBytecode="-1" sourcefile="DBUnitSetUpBenchmarkTest.java" sourcepath="test/org/discoblog/words/dao/benchmark/DBUnitSetUpBenchmarkTest.java"/>
+    </Class>
+    <Method classname="test.org.discoblog.words.dao.benchmark.DBUnitSetUpBenchmarkTest" name="getConnection" signature="()Lorg/dbunit/database/IDatabaseConnection;" isStatic="false">
+      <SourceLine classname="test.org.discoblog.words.dao.benchmark.DBUnitSetUpBenchmarkTest" start="31" end="35" startBytecode="0" endBytecode="12" sourcefile="DBUnitSetUpBenchmarkTest.java" sourcepath="test/org/discoblog/words/dao/benchmark/DBUnitSetUpBenchmarkTest.java"/>
+    </Method>
+    <LocalVariable name="driverClass" register="1" pc="6" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="test.org.discoblog.words.dao.benchmark.DBUnitSetUpBenchmarkTest" start="31" end="31" startBytecode="5" endBytecode="5" sourcefile="DBUnitSetUpBenchmarkTest.java" sourcepath="test/org/discoblog/words/dao/benchmark/DBUnitSetUpBenchmarkTest.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" abbrev="UrF" category="PERFORMANCE">
+    <Class classname="test.org.discoblog.words.dao.benchmark.DBUnitSetUpBenchmarkTest">
+      <SourceLine classname="test.org.discoblog.words.dao.benchmark.DBUnitSetUpBenchmarkTest" start="-1" end="-1" startBytecode="-1" endBytecode="-1" sourcefile="DBUnitSetUpBenchmarkTest.java" sourcepath="test/org/discoblog/words/dao/benchmark/DBUnitSetUpBenchmarkTest.java"/>
+    </Class>
+    <Field classname="test.org.discoblog.words.dao.benchmark.DBUnitSetUpBenchmarkTest" name="dao" signature="Lorg/discoblog/words/dao/WordDAO;" isStatic="false">
+      <SourceLine classname="test.org.discoblog.words.dao.benchmark.DBUnitSetUpBenchmarkTest" start="-1" end="-1" startBytecode="-1" endBytecode="-1" sourcefile="DBUnitSetUpBenchmarkTest.java" sourcepath="test/org/discoblog/words/dao/benchmark/DBUnitSetUpBenchmarkTest.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" abbrev="DLS" category="STYLE">
+    <Class classname="test.org.discoblog.words.dao.nfjs.CompositeDataSetTest">
+      <SourceLine classname="test.org.discoblog.words.dao.nfjs.CompositeDataSetTest" start="-1" end="-1" startBytecode="-1" endBytecode="-1" sourcefile="CompositeDataSetTest.java" sourcepath="test/org/discoblog/words/dao/nfjs/CompositeDataSetTest.java"/>
+    </Class>
+    <Method classname="test.org.discoblog.words.dao.nfjs.CompositeDataSetTest" name="getConnection" signature="()Lorg/dbunit/database/IDatabaseConnection;" isStatic="false">
+      <SourceLine classname="test.org.discoblog.words.dao.nfjs.CompositeDataSetTest" start="51" end="55" startBytecode="0" endBytecode="12" sourcefile="CompositeDataSetTest.java" sourcepath="test/org/discoblog/words/dao/nfjs/CompositeDataSetTest.java"/>
+    </Method>
+    <LocalVariable name="driverClass" register="1" pc="6" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="test.org.discoblog.words.dao.nfjs.CompositeDataSetTest" start="51" end="51" startBytecode="5" endBytecode="5" sourcefile="CompositeDataSetTest.java" sourcepath="test/org/discoblog/words/dao/nfjs/CompositeDataSetTest.java"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" abbrev="DLS" category="STYLE">
+    <Class classname="test.org.discoblog.words.dao.nfjs.DbUnitDelegationTest">
+      <SourceLine classname="test.org.discoblog.words.dao.nfjs.DbUnitDelegationTest" start="-1" end="-1" startBytecode="-1" endBytecode="-1" sourcefile="DbUnitDelegationTest.java" sourcepath="test/org/discoblog/words/dao/nfjs/DbUnitDelegationTest.java"/>
+    </Class>
+    <Method classname="test.org.discoblog.words.dao.nfjs.DbUnitDelegationTest" name="getConnection" signature="()Lorg/dbunit/database/IDatabaseConnection;" isStatic="false">
+      <SourceLine classname="test.org.discoblog.words.dao.nfjs.DbUnitDelegationTest" start="61" end="65" startBytecode="0" endBytecode="12" sourcefile="DbUnitDelegationTest.java" sourcepath="test/org/discoblog/words/dao/nfjs/DbUnitDelegationTest.java"/>
+    </Method>
+    <LocalVariable name="driverClass" register="1" pc="6" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="test.org.discoblog.words.dao.nfjs.DbUnitDelegationTest" start="61" end="61" startBytecode="5" endBytecode="5" sourcefile="DbUnitDelegationTest.java" sourcepath="test/org/discoblog/words/dao/nfjs/DbUnitDelegationTest.java"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" abbrev="DLS" category="STYLE">
+    <Class classname="test.org.discoblog.words.dao.perf.WordDAOImplLoadAndTimedTest">
+      <SourceLine classname="test.org.discoblog.words.dao.perf.WordDAOImplLoadAndTimedTest" start="-1" end="-1" startBytecode="-1" endBytecode="-1" sourcefile="WordDAOImplLoadAndTimedTest.java" sourcepath="test/org/discoblog/words/dao/perf/WordDAOImplLoadAndTimedTest.java"/>
+    </Class>
+    <Method classname="test.org.discoblog.words.dao.perf.WordDAOImplLoadAndTimedTest" name="suite" signature="()Ljunit/framework/Test;" isStatic="true">
+      <SourceLine classname="test.org.discoblog.words.dao.perf.WordDAOImplLoadAndTimedTest" start="72" end="81" startBytecode="0" endBytecode="29" sourcefile="WordDAOImplLoadAndTimedTest.java" sourcepath="test/org/discoblog/words/dao/perf/WordDAOImplLoadAndTimedTest.java"/>
+    </Method>
+    <LocalVariable name="testCase" register="4" pc="29" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="test.org.discoblog.words.dao.perf.WordDAOImplLoadAndTimedTest" start="75" end="75" startBytecode="27" endBytecode="27" sourcefile="WordDAOImplLoadAndTimedTest.java" sourcepath="test/org/discoblog/words/dao/perf/WordDAOImplLoadAndTimedTest.java"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" abbrev="DLS" category="STYLE">
+    <Class classname="test.org.discoblog.words.dao.perf.WordDAOImplLoadAndTimedTest">
+      <SourceLine classname="test.org.discoblog.words.dao.perf.WordDAOImplLoadAndTimedTest" start="-1" end="-1" startBytecode="-1" endBytecode="-1" sourcefile="WordDAOImplLoadAndTimedTest.java" sourcepath="test/org/discoblog/words/dao/perf/WordDAOImplLoadAndTimedTest.java"/>
+    </Class>
+    <Method classname="test.org.discoblog.words.dao.perf.WordDAOImplLoadAndTimedTest" name="getConnection" signature="()Lorg/dbunit/database/IDatabaseConnection;" isStatic="false">
+      <SourceLine classname="test.org.discoblog.words.dao.perf.WordDAOImplLoadAndTimedTest" start="50" end="54" startBytecode="0" endBytecode="12" sourcefile="WordDAOImplLoadAndTimedTest.java" sourcepath="test/org/discoblog/words/dao/perf/WordDAOImplLoadAndTimedTest.java"/>
+    </Method>
+    <LocalVariable name="driverClass" register="1" pc="6" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="test.org.discoblog.words.dao.perf.WordDAOImplLoadAndTimedTest" start="50" end="50" startBytecode="5" endBytecode="5" sourcefile="WordDAOImplLoadAndTimedTest.java" sourcepath="test/org/discoblog/words/dao/perf/WordDAOImplLoadAndTimedTest.java"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" abbrev="DLS" category="STYLE">
+    <Class classname="test.org.discoblog.words.dao.perf.WordDAOImplLoadTest">
+      <SourceLine classname="test.org.discoblog.words.dao.perf.WordDAOImplLoadTest" start="-1" end="-1" startBytecode="-1" endBytecode="-1" sourcefile="WordDAOImplLoadTest.java" sourcepath="test/org/discoblog/words/dao/perf/WordDAOImplLoadTest.java"/>
+    </Class>
+    <Method classname="test.org.discoblog.words.dao.perf.WordDAOImplLoadTest" name="getConnection" signature="()Lorg/dbunit/database/IDatabaseConnection;" isStatic="false">
+      <SourceLine classname="test.org.discoblog.words.dao.perf.WordDAOImplLoadTest" start="50" end="54" startBytecode="0" endBytecode="12" sourcefile="WordDAOImplLoadTest.java" sourcepath="test/org/discoblog/words/dao/perf/WordDAOImplLoadTest.java"/>
+    </Method>
+    <LocalVariable name="driverClass" register="1" pc="6" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="test.org.discoblog.words.dao.perf.WordDAOImplLoadTest" start="50" end="50" startBytecode="5" endBytecode="5" sourcefile="WordDAOImplLoadTest.java" sourcepath="test/org/discoblog/words/dao/perf/WordDAOImplLoadTest.java"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" abbrev="DLS" category="STYLE">
+    <Class classname="test.org.discoblog.words.dao.perf.WordDAOImplTimedTest">
+      <SourceLine classname="test.org.discoblog.words.dao.perf.WordDAOImplTimedTest" start="-1" end="-1" startBytecode="-1" endBytecode="-1" sourcefile="WordDAOImplTimedTest.java" sourcepath="test/org/discoblog/words/dao/perf/WordDAOImplTimedTest.java"/>
+    </Class>
+    <Method classname="test.org.discoblog.words.dao.perf.WordDAOImplTimedTest" name="getConnection" signature="()Lorg/dbunit/database/IDatabaseConnection;" isStatic="false">
+      <SourceLine classname="test.org.discoblog.words.dao.perf.WordDAOImplTimedTest" start="47" end="51" startBytecode="0" endBytecode="12" sourcefile="WordDAOImplTimedTest.java" sourcepath="test/org/discoblog/words/dao/perf/WordDAOImplTimedTest.java"/>
+    </Method>
+    <LocalVariable name="driverClass" register="1" pc="6" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="test.org.discoblog.words.dao.perf.WordDAOImplTimedTest" start="47" end="47" startBytecode="5" endBytecode="5" sourcefile="WordDAOImplTimedTest.java" sourcepath="test/org/discoblog/words/dao/perf/WordDAOImplTimedTest.java"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" abbrev="DLS" category="STYLE">
+    <Class classname="test.org.discoblog.words.dao.spring.DefaultSpringWordDAOImplTest">
+      <SourceLine classname="test.org.discoblog.words.dao.spring.DefaultSpringWordDAOImplTest" start="-1" end="-1" startBytecode="-1" endBytecode="-1" sourcefile="DefaultSpringWordDAOImplTest.java" sourcepath="test/org/discoblog/words/dao/spring/DefaultSpringWordDAOImplTest.java"/>
+    </Class>
+    <Method classname="test.org.discoblog.words.dao.spring.DefaultSpringWordDAOImplTest" name="getConnection" signature="()Lorg/dbunit/database/IDatabaseConnection;" isStatic="false">
+      <SourceLine classname="test.org.discoblog.words.dao.spring.DefaultSpringWordDAOImplTest" start="38" end="42" startBytecode="0" endBytecode="12" sourcefile="DefaultSpringWordDAOImplTest.java" sourcepath="test/org/discoblog/words/dao/spring/DefaultSpringWordDAOImplTest.java"/>
+    </Method>
+    <LocalVariable name="driverClass" register="1" pc="6" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="test.org.discoblog.words.dao.spring.DefaultSpringWordDAOImplTest" start="38" end="38" startBytecode="5" endBytecode="5" sourcefile="DefaultSpringWordDAOImplTest.java" sourcepath="test/org/discoblog/words/dao/spring/DefaultSpringWordDAOImplTest.java"/>
+  </BugInstance>
+  <Errors></Errors>
+  <FindBugsSummary timestamp="Mon, 18 Dec 2006 20:25:18 -0700" total_classes="42" total_bugs="13" total_size="1003" num_packages="18" cpu_seconds="5.28" clock_seconds="5.64" peak_mbytes="28.11" gc_seconds="0.81" priority_2="10" priority_1="3">
+    <PackageStats package="org.discoblog.words.bizobj" total_bugs="0" total_types="3" total_size="29">
+      <ClassStats class="org.discoblog.words.bizobj.IDefinition" interface="true" size="9" bugs="0"/>
+      <ClassStats class="org.discoblog.words.bizobj.ISynonym" interface="true" size="7" bugs="0"/>
+      <ClassStats class="org.discoblog.words.bizobj.IWord" interface="true" size="13" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.discoblog.words.bizobj.impl" total_bugs="0" total_types="4" total_size="174">
+      <ClassStats class="org.discoblog.words.bizobj.impl.Definition" interface="false" size="52" bugs="0"/>
+      <ClassStats class="org.discoblog.words.bizobj.impl.PartOfSpeechEnum" interface="false" size="16" bugs="0"/>
+      <ClassStats class="org.discoblog.words.bizobj.impl.Synonym" interface="false" size="43" bugs="0"/>
+      <ClassStats class="org.discoblog.words.bizobj.impl.Word" interface="false" size="63" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.discoblog.words.dao" total_bugs="0" total_types="1" total_size="5">
+      <ClassStats class="org.discoblog.words.dao.WordDAO" interface="true" size="5" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.discoblog.words.dao.exception" total_bugs="0" total_types="4" total_size="39">
+      <ClassStats class="org.discoblog.words.dao.exception.CreateException" interface="false" size="7" bugs="0"/>
+      <ClassStats class="org.discoblog.words.dao.exception.FindException" interface="false" size="18" bugs="0"/>
+      <ClassStats class="org.discoblog.words.dao.exception.RemoveException" interface="false" size="7" bugs="0"/>
+      <ClassStats class="org.discoblog.words.dao.exception.UpdateException" interface="false" size="7" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.discoblog.words.dao.impl.spring" total_bugs="0" total_types="2" total_size="38">
+      <ClassStats class="org.discoblog.words.dao.impl.spring.SpringWordDAOImpl" interface="false" size="24" bugs="0"/>
+      <ClassStats class="org.discoblog.words.dao.impl.spring.SpringWordDAOImpl$1" interface="false" size="14" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.discoblog.words.dbunit.generator" total_bugs="2" total_types="2" total_size="25" priority_2="2">
+      <ClassStats class="org.discoblog.words.dbunit.generator.DbUnitSeedFileGenerator" interface="false" size="12" bugs="1" priority_2="1"/>
+      <ClassStats class="org.discoblog.words.dbunit.generator.PartialSeedFileGenerator" interface="false" size="13" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <PackageStats package="org.discoblog.words.ddlutil" total_bugs="1" total_types="1" total_size="17" priority_1="1">
+      <ClassStats class="org.discoblog.words.ddlutil.DDLReader" interface="false" size="17" bugs="1" priority_1="1"/>
+    </PackageStats>
+    <PackageStats package="org.discoblog.words.report" total_bugs="1" total_types="7" total_size="93" priority_1="1">
+      <ClassStats class="org.discoblog.words.report.WordReport" interface="false" size="24" bugs="1" priority_1="1"/>
+      <ClassStats class="org.discoblog.words.report.WordReport$5" interface="false" size="16" bugs="0"/>
+      <ClassStats class="org.discoblog.words.report.WordReport$_getWordsXML_closure1" interface="false" size="11" bugs="0"/>
+      <ClassStats class="org.discoblog.words.report.WordReport$_getWordsXML_closure1_closure2" interface="false" size="10" bugs="0"/>
+      <ClassStats class="org.discoblog.words.report.WordReport$_getWordsXML_closure1_closure2_closure3" interface="false" size="13" bugs="0"/>
+      <ClassStats class="org.discoblog.words.report.WordReport$_getWordsXML_closure1_closure2_closure3_closure4" interface="false" size="13" bugs="0"/>
+      <ClassStats class="org.discoblog.words.report.WordReport$_getWordsXML_closure1_closure2_closure3_closure4_closure6" interface="false" size="6" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="test.org.discoblog.words" total_bugs="0" total_types="1" total_size="14">
+      <ClassStats class="test.org.discoblog.words.ComponentTestSuite" interface="false" size="14" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="test.org.discoblog.words.bizobj" total_bugs="0" total_types="1" total_size="30">
+      <ClassStats class="test.org.discoblog.words.bizobj.DefinitionTest" interface="false" size="30" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="test.org.discoblog.words.dao.benchmark" total_bugs="2" total_types="1" total_size="24" priority_2="2">
+      <ClassStats class="test.org.discoblog.words.dao.benchmark.DBUnitSetUpBenchmarkTest" interface="false" size="24" bugs="2" priority_2="2"/>
+    </PackageStats>
+    <PackageStats package="test.org.discoblog.words.dao.nfjs" total_bugs="2" total_types="3" total_size="137" priority_2="2">
+      <ClassStats class="test.org.discoblog.words.dao.nfjs.ApplicationSeedingTest" interface="false" size="47" bugs="0"/>
+      <ClassStats class="test.org.discoblog.words.dao.nfjs.CompositeDataSetTest" interface="false" size="34" bugs="1" priority_2="1"/>
+      <ClassStats class="test.org.discoblog.words.dao.nfjs.DbUnitDelegationTest" interface="false" size="56" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <PackageStats package="test.org.discoblog.words.dao.perf" total_bugs="4" total_types="3" total_size="111" priority_2="3" priority_1="1">
+      <ClassStats class="test.org.discoblog.words.dao.perf.WordDAOImplLoadAndTimedTest" interface="false" size="38" bugs="2" priority_2="1" priority_1="1"/>
+      <ClassStats class="test.org.discoblog.words.dao.perf.WordDAOImplLoadTest" interface="false" size="37" bugs="1" priority_2="1"/>
+      <ClassStats class="test.org.discoblog.words.dao.perf.WordDAOImplTimedTest" interface="false" size="36" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <PackageStats package="test.org.discoblog.words.dao.spring" total_bugs="1" total_types="1" total_size="87" priority_2="1">
+      <ClassStats class="test.org.discoblog.words.dao.spring.DefaultSpringWordDAOImplTest" interface="false" size="87" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <PackageStats package="test.org.discoblog.words.hsql" total_bugs="0" total_types="2" total_size="40">
+      <ClassStats class="test.org.discoblog.words.hsql.GroovyFileReaderTest" interface="false" size="8" bugs="0"/>
+      <ClassStats class="test.org.discoblog.words.hsql.WordsDatabaseSetupTest" interface="false" size="32" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="test.org.discoblog.words.metrics" total_bugs="0" total_types="3" total_size="69">
+      <ClassStats class="test.org.discoblog.words.metrics.AfferentCouplingTest" interface="false" size="17" bugs="0"/>
+      <ClassStats class="test.org.discoblog.words.metrics.JDependPlaygroundTest" interface="false" size="43" bugs="0"/>
+      <ClassStats class="test.org.discoblog.words.metrics.OppositePackageFilter" interface="false" size="9" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="test.org.discoblog.words.report" total_bugs="0" total_types="1" total_size="16">
+      <ClassStats class="test.org.discoblog.words.report.WordReportTest" interface="false" size="16" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="test.org.discoblog.words.web" total_bugs="0" total_types="2" total_size="55">
+      <ClassStats class="test.org.discoblog.words.web.RepeatableWordCreationTest" interface="false" size="36" bugs="0"/>
+      <ClassStats class="test.org.discoblog.words.web.WordCreationTest" interface="false" size="19" bugs="0"/>
+    </PackageStats>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

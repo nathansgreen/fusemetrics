@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="Cp1252"?>
+<pmd-cpd>
+<duplication lines="84" tokens="428">
+<file line="953" path="C:\ci_tools\.nsat_ci\jobs\nsat_nightly\workspace\nsat_nightly\nsat1\admintool\src\main\org\collegeboard\sat\admintool\webservice\converter\ArchivedScoreReportConverter.java"/>
+<file line="1393" path="C:\ci_tools\.nsat_ci\jobs\nsat_nightly\workspace\nsat_nightly\nsat1\admintool\src\main\org\collegeboard\sat\admintool\webservice\student\ejb\StudentServiceWSBean.java"/>
+<codefragment>
+<![CDATA[
+  private void setStudentAddress(Student student, AddressType address) throws Exception{
+    // address line 1 (NOT NULL)
+    String address1 = address.getStreetAddressLine1();
+    if (address1 != null &&
+        !address1.equalsIgnoreCase(student.getStreetAddr1())) {
+      student.setStreetAddr1(address1);
+    }
+    // address line 2
+    String address2 = address.getStreetAddressLine2();
+    if (address2 == null ||
+        (address2 != null && !address2.equalsIgnoreCase(student.getStreetAddr2()))) {
+      student.setStreetAddr2(address2);
+    }
+    // city (NOT NULL)
+    String city = address.getCity();
+    if (city != null &&
+        !city.equalsIgnoreCase(student.getCity())) {
+      student.setCity(city);
+    }
+
+    String countryCode = address.getCountryCode();
+    if ("US".equals(countryCode)) {
+      // If it is US address, should set address3 = null.
+      student.setStreetAddr3(null);
+
+      // state (NOT NULL)
+      String state = address.getState();
+      if (state != null &&
+          !state.equalsIgnoreCase(student.getStateCode())) {
+        student.setStateCode(state);
+        student.setProvince(null);
+      }
+      // zip5 (NOT NULL)
+      String zip5 = address.getZip5();
+      if (zip5 != null &&
+          !zip5.equals(student.getZip5())) {
+        student.setZip5(zip5);
+        student.setIntlPostalCode(null);
+      }
+
+      // zip4
+      String zip4 = address.getZip4();
+      if (zip4 == null ||
+          zip4 != null && !zip4.equals(student.getZip4())) {
+        student.setZip4(zip4);
+        student.setIntlPostalCode(null);
+      }
+      //country iso code
+      student.setCountryIsoCode("US");
+    }
+
+    // international
+    else {
+      // address line 3
+      String address3 = address.getStreetAddressLine3();
+      if (address3 == null ||
+          (address3 != null &&
+           !address3.equalsIgnoreCase(student.getStreetAddr3()))) {
+        student.setStreetAddr3(address3);
+      }
+
+      // province
+      String province = address.getProvince();
+      if (province == null ||
+          (province != null && !province.equalsIgnoreCase(student.getProvince()))) {
+        student.setProvince(province);
+        student.setStateCode(null);
+      }
+
+      // international postal code
+      String postCode = address.getPostalCode();
+      if (postCode == null ||
+          (postCode != null && !postCode.equals(student.getIntlPostalCode()))) {
+        student.setIntlPostalCode(postCode);
+        student.setZip5(null);
+        student.setZip4(null);
+      }
+      // Set country iso code and region fips code based on ets country code
+      if (countryCode != null) {
+        setCountryRegionCode(student, countryCode);
+      }
+    }
+
+  }
+]]>
+</codefragment>
+</duplication>
+<duplication lines="72" tokens="381">
+<file line="66" path="C:\ci_tools\.nsat_ci\jobs\nsat_nightly\workspace\nsat_nightly\nsat1\admintool\src\main\org\collegeboard\sat\admintool\webservice\usermanagement\ejb\LoginServiceWSBean.java"/>
+<file line="60" path="C:\ci_tools\.nsat_ci\jobs\nsat_nightly\workspace\nsat_nightly\nsat1\admintool\src\main\org\collegeboard\sat\admintool\webservice\usermanagement\ejb\SecurityServiceWSBean.java"/>
+<codefragment>
+<![CDATA[
+    private final static ILogger logger = LogManager.getLogger(SecurityServiceWSBean.class);
+
+    /**
+     * This method is used to login a user.
+     *
+     * @param username
+     *        String
+     * @param password
+     *        String
+     * @throws SOAPException
+     * @return String
+     * @ejbgen:remote-method
+     */
+    public String login(String username, String password) throws SOAPException {
+        String guid = null;
+
+        try {
+            SecurityService securityService = getSecurityService(SecurityServiceHome.class);
+            guid = securityService.login(username, password);
+        } catch (InvalidLoginException ie) {
+            Detail detail = SOAPFactory.newInstance().createDetail();
+            detail.addChildElement("ErrorDetails").addTextNode("Failed to login. nested exception: " + ie.getMessage());
+            throw new SOAPFaultException(
+                    new QName("http://www.collegeboard.com/sat/webservice", "ERROR.INVALID_LOGIN"),
+                    "ERROR.INVALID_LOGIN", "SecurityServiceWSBean", detail);
+        } catch (AccountExpiredException aee) {
+            Detail detail = SOAPFactory.newInstance().createDetail();
+            detail.addChildElement("ErrorDetails")
+                    .addTextNode("Failed to login. nested exception: " + aee.getMessage());
+            throw new SOAPFaultException(new QName("http://www.collegeboard.com/sat/webservice",
+                    "ERROR.ACCOUNT_EXPIRED"), "ERROR.ACCOUNT_EXPIRED", "SecurityServiceWSBean", detail);
+        } catch (InactiveUserException ue) {
+            Detail detail = SOAPFactory.newInstance().createDetail();
+            detail.addChildElement("ErrorDetails").addTextNode("Inactive user. nested exception: " + ue.getMessage());
+            throw new SOAPFaultException(
+                    new QName("http://www.collegeboard.com/sat/webservice", "ERROR.INACTIVE_USER"),
+                    "ERROR.INACTIVE_USER", "SecurityServiceWSBean", detail);
+
+        } catch (ExceedMaximumLoginException ee) {
+            Detail detail = SOAPFactory.newInstance().createDetail();
+            detail.addChildElement("ErrorDetails").addTextNode(
+                    "Exceed the maximum login attempts. nested exception: " + ee.getMessage());
+            throw new SOAPFaultException(new QName("http://www.collegeboard.com/sat/webservice",
+                    "ERROR.EXCEED_MAXIMUM_LOGIN"), "ERROR.EXCEED_MAXIMUM_LOGIN", "SecurityServiceWSBean", detail);
+
+        } catch (AlreadyLoginException ae) {
+            Detail detail = SOAPFactory.newInstance().createDetail();
+            detail.addChildElement("ErrorDetails").addTextNode("Failed to login. nested exception: " + ae.getMessage());
+            throw new SOAPFaultException(
+                    new QName("http://www.collegeboard.com/sat/webservice", "ERROR.ALREADY_LOGIN"),
+                    "ERROR.ALREADY_LOGIN", "SecurityServiceWSBean", detail);
+
+        } catch (Exception ex) {
+            logger.error(StackTraceUtil.getStackTrace(ex));
+            Detail detail = SOAPFactory.newInstance().createDetail();
+            detail.addChildElement("ErrorDetails").addTextNode("Failed to login. nested exception: " + ex.getMessage());
+            throw new SOAPFaultException(new QName("http://www.collegeboard.com/sat/webservice", "ERROR.LOGIN"),
+                    "ERROR.LOGIN", "SecurityServiceWSBean", detail);
+        }
+
+        return guid;
+    }
+
+    /**
+     * This method is used to log out a user.
+     *
+     * @param username
+     *        String
+     * @throws SOAPException
+     * @ejbgen:remote-method
+     */
+    public void logout(String username) throws SOAPException {
+]]>
+</codefragment>
+</duplication>
+</pmd-cpd>
