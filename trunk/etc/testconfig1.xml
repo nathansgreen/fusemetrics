@@ -1,0 +1,6 @@
+<config search="test_1" output="output_1">
+
+   <metric name="test_metric_1" analysis="test_plugin_1" />
+   <metric name="test_metric_2" analysis="metric2_plugin" />
+
+</config>

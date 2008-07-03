@@ -1,0 +1,366 @@
+<?xml version="1.0"?>
+<JDepend>
+    <Packages>
+
+        <Package name="groovy.lang">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="java.io">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="java.lang">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="java.sql">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="java.util">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="net.sf.hibernate">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="org.apache.commons.lang.builder">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="org.codehaus.groovy.runtime">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="org.dbunit.database">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="org.dbunit.dataset.xml">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="org.discoblog.words.bizobj">
+            <Stats>
+                <TotalClasses>3</TotalClasses>
+                <ConcreteClasses>0</ConcreteClasses>
+                <AbstractClasses>3</AbstractClasses>
+                <Ca>3</Ca>
+                <Ce>2</Ce>
+                <A>1</A>
+                <I>0.4</I>
+                <D>0.4</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+                <Class sourceFile="IDefinition.java">
+                    org.discoblog.words.bizobj.IDefinition
+                </Class>
+                <Class sourceFile="ISynonym.java">
+                    org.discoblog.words.bizobj.ISynonym
+                </Class>
+                <Class sourceFile="IWord.java">
+                    org.discoblog.words.bizobj.IWord
+                </Class>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>java.lang</Package>
+                <Package>java.util</Package>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>org.discoblog.words.bizobj.impl</Package>
+                <Package>org.discoblog.words.dao</Package>
+                <Package>org.discoblog.words.dao.impl.spring</Package>
+            </UsedBy>
+        </Package>
+
+        <Package name="org.discoblog.words.bizobj.impl">
+            <Stats>
+                <TotalClasses>4</TotalClasses>
+                <ConcreteClasses>4</ConcreteClasses>
+                <AbstractClasses>0</AbstractClasses>
+                <Ca>0</Ca>
+                <Ce>4</Ce>
+                <A>0</A>
+                <I>1</I>
+                <D>0</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="Definition.java">
+                    org.discoblog.words.bizobj.impl.Definition
+                </Class>
+                <Class sourceFile="PartOfSpeechEnum.java">
+                    org.discoblog.words.bizobj.impl.PartOfSpeechEnum
+                </Class>
+                <Class sourceFile="Synonym.java">
+                    org.discoblog.words.bizobj.impl.Synonym
+                </Class>
+                <Class sourceFile="Word.java">
+                    org.discoblog.words.bizobj.impl.Word
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>java.lang</Package>
+                <Package>java.util</Package>
+                <Package>org.apache.commons.lang.builder</Package>
+                <Package>org.discoblog.words.bizobj</Package>
+            </DependsUpon>
+
+            <UsedBy>
+            </UsedBy>
+        </Package>
+
+        <Package name="org.discoblog.words.dao">
+            <Stats>
+                <TotalClasses>1</TotalClasses>
+                <ConcreteClasses>0</ConcreteClasses>
+                <AbstractClasses>1</AbstractClasses>
+                <Ca>1</Ca>
+                <Ce>3</Ce>
+                <A>1</A>
+                <I>0.75</I>
+                <D>0.75</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+                <Class sourceFile="WordDAO.java">
+                    org.discoblog.words.dao.WordDAO
+                </Class>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>java.lang</Package>
+                <Package>org.discoblog.words.bizobj</Package>
+                <Package>org.discoblog.words.dao.exception</Package>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>org.discoblog.words.dao.impl.spring</Package>
+            </UsedBy>
+        </Package>
+
+        <Package name="org.discoblog.words.dao.exception">
+            <Stats>
+                <TotalClasses>4</TotalClasses>
+                <ConcreteClasses>4</ConcreteClasses>
+                <AbstractClasses>0</AbstractClasses>
+                <Ca>2</Ca>
+                <Ce>1</Ce>
+                <A>0</A>
+                <I>0.33</I>
+                <D>0.67</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="CreateException.java">
+                    org.discoblog.words.dao.exception.CreateException
+                </Class>
+                <Class sourceFile="FindException.java">
+                    org.discoblog.words.dao.exception.FindException
+                </Class>
+                <Class sourceFile="RemoveException.java">
+                    org.discoblog.words.dao.exception.RemoveException
+                </Class>
+                <Class sourceFile="UpdateException.java">
+                    org.discoblog.words.dao.exception.UpdateException
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>java.lang</Package>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>org.discoblog.words.dao</Package>
+                <Package>org.discoblog.words.dao.impl.spring</Package>
+            </UsedBy>
+        </Package>
+
+        <Package name="org.discoblog.words.dao.impl.spring">
+            <Stats>
+                <TotalClasses>2</TotalClasses>
+                <ConcreteClasses>2</ConcreteClasses>
+                <AbstractClasses>0</AbstractClasses>
+                <Ca>0</Ca>
+                <Ce>7</Ce>
+                <A>0</A>
+                <I>1</I>
+                <D>0</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="SpringWordDAOImpl.java">
+                    org.discoblog.words.dao.impl.spring.SpringWordDAOImpl
+                </Class>
+                <Class sourceFile="SpringWordDAOImpl.java">
+                    org.discoblog.words.dao.impl.spring.SpringWordDAOImpl$1
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>java.lang</Package>
+                <Package>java.util</Package>
+                <Package>net.sf.hibernate</Package>
+                <Package>org.discoblog.words.bizobj</Package>
+                <Package>org.discoblog.words.dao</Package>
+                <Package>org.discoblog.words.dao.exception</Package>
+                <Package>org.springframework.orm.hibernate</Package>
+            </DependsUpon>
+
+            <UsedBy>
+            </UsedBy>
+        </Package>
+
+        <Package name="org.discoblog.words.dbunit.generator">
+            <Stats>
+                <TotalClasses>2</TotalClasses>
+                <ConcreteClasses>2</ConcreteClasses>
+                <AbstractClasses>0</AbstractClasses>
+                <Ca>0</Ca>
+                <Ce>5</Ce>
+                <A>0</A>
+                <I>1</I>
+                <D>0</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="DbUnitSeedFileGenerator.java">
+                    org.discoblog.words.dbunit.generator.DbUnitSeedFileGenerator
+                </Class>
+                <Class sourceFile="PartialSeedFileGenerator.java">
+                    org.discoblog.words.dbunit.generator.PartialSeedFileGenerator
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>java.io</Package>
+                <Package>java.lang</Package>
+                <Package>java.sql</Package>
+                <Package>org.dbunit.database</Package>
+                <Package>org.dbunit.dataset.xml</Package>
+            </DependsUpon>
+
+            <UsedBy>
+            </UsedBy>
+        </Package>
+
+        <Package name="org.discoblog.words.ddlutil">
+            <Stats>
+                <TotalClasses>1</TotalClasses>
+                <ConcreteClasses>1</ConcreteClasses>
+                <AbstractClasses>0</AbstractClasses>
+                <Ca>0</Ca>
+                <Ce>3</Ce>
+                <A>0</A>
+                <I>1</I>
+                <D>0</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="DDLReader.groovy">
+                    org.discoblog.words.ddlutil.DDLReader
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>groovy.lang</Package>
+                <Package>java.lang</Package>
+                <Package>org.codehaus.groovy.runtime</Package>
+            </DependsUpon>
+
+            <UsedBy>
+            </UsedBy>
+        </Package>
+
+        <Package name="org.discoblog.words.report">
+            <Stats>
+                <TotalClasses>7</TotalClasses>
+                <ConcreteClasses>7</ConcreteClasses>
+                <AbstractClasses>0</AbstractClasses>
+                <Ca>0</Ca>
+                <Ce>3</Ce>
+                <A>0</A>
+                <I>1</I>
+                <D>0</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="WordReport.groovy">
+                    org.discoblog.words.report.WordReport
+                </Class>
+                <Class sourceFile="WordReport.groovy">
+                    org.discoblog.words.report.WordReport$5
+                </Class>
+                <Class sourceFile="WordReport.groovy">
+                    org.discoblog.words.report.WordReport$_getWordsXML_closure1
+                </Class>
+                <Class sourceFile="WordReport.groovy">
+                    org.discoblog.words.report.WordReport$_getWordsXML_closure1_closure2
+                </Class>
+                <Class sourceFile="WordReport.groovy">
+                    org.discoblog.words.report.WordReport$_getWordsXML_closure1_closure2_closure3
+                </Class>
+                <Class sourceFile="WordReport.groovy">
+                    org.discoblog.words.report.WordReport$_getWordsXML_closure1_closure2_closure3_closure4
+                </Class>
+                <Class sourceFile="WordReport.groovy">
+                    org.discoblog.words.report.WordReport$_getWordsXML_closure1_closure2_closure3_closure4_closure6
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>groovy.lang</Package>
+                <Package>java.lang</Package>
+                <Package>org.codehaus.groovy.runtime</Package>
+            </DependsUpon>
+
+            <UsedBy>
+            </UsedBy>
+        </Package>
+
+        <Package name="org.springframework.orm.hibernate">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+    </Packages>
+
+    <Cycles>
+    </Cycles>
+</JDepend>

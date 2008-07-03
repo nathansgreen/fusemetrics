@@ -1,0 +1,434 @@
+<?xml version="1.0"?>
+<!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-02.dtd">
+
+<coverage line-rate="0.8814814814814815" branch-rate="1.0" version="1.6" timestamp="1140993408718">
+	<sources>
+		<source>C:/dev/projects/projects-3.0/adana/src/java</source>
+	</sources>
+	<packages>
+		<package name="com.vanward.adana.hierarchy" line-rate="0.9354838709677419" branch-rate="1.0" complexity="1.75">
+			<classes>
+				<class name="com.vanward.adana.hierarchy.Hierarchy" filename="com/vanward/adana/hierarchy/Hierarchy.java" line-rate="1.0" branch-rate="1.0" complexity="1.2">
+					<methods>
+						<method name="&lt;init&gt;" signature="()V" line-rate="1.0" branch-rate="1.0">
+							<lines>
+								<line number="18" hits="26" branch="false"/>
+								<line number="19" hits="26" branch="false"/>
+								<line number="20" hits="26" branch="false"/>
+							</lines>
+						</method>
+						<method name="addClass" signature="(Ljava/lang/Class;)V" line-rate="1.0" branch-rate="1.0">
+							<lines>
+								<line number="26" hits="41" branch="false"/>
+								<line number="27" hits="41" branch="false"/>
+							</lines>
+						</method>
+						<method name="getBaseClass" signature="()Ljava/lang/Class;" line-rate="1.0" branch-rate="1.0">
+							<lines>
+								<line number="45" hits="8" branch="false"/>
+							</lines>
+						</method>
+						<method name="getHierarchyClassNames" signature="()[Ljava/lang/String;" line-rate="1.0" branch-rate="1.0">
+							<lines>
+								<line number="33" hits="18" branch="false"/>
+								<line number="34" hits="18" branch="false"/>
+								<line number="35" hits="61" branch="true"/>
+								<line number="36" hits="25" branch="false"/>
+								<line number="37" hits="25" branch="false"/>
+								<line number="39" hits="18" branch="false"/>
+							</lines>
+						</method>
+						<method name="setBaseClass" signature="(Ljava/lang/Class;)V" line-rate="1.0" branch-rate="1.0">
+							<lines>
+								<line number="51" hits="23" branch="false"/>
+								<line number="52" hits="23" branch="false"/>
+							</lines>
+						</method>
+					</methods>
+					<lines>
+						<line number="18" hits="26" branch="false"/>
+						<line number="19" hits="26" branch="false"/>
+						<line number="20" hits="26" branch="false"/>
+						<line number="26" hits="41" branch="false"/>
+						<line number="27" hits="41" branch="false"/>
+						<line number="33" hits="18" branch="false"/>
+						<line number="34" hits="18" branch="false"/>
+						<line number="35" hits="61" branch="true"/>
+						<line number="36" hits="25" branch="false"/>
+						<line number="37" hits="25" branch="false"/>
+						<line number="39" hits="18" branch="false"/>
+						<line number="45" hits="8" branch="false"/>
+						<line number="51" hits="23" branch="false"/>
+						<line number="52" hits="23" branch="false"/>
+					</lines>
+				</class>
+				<class name="com.vanward.adana.hierarchy.HierarchyBuilder" filename="com/vanward/adana/hierarchy/HierarchyBuilder.java" line-rate="0.8823529411764706" branch-rate="1.0" complexity="2.6666666666666665">
+					<methods>
+						<method name="&lt;init&gt;" signature="()V" line-rate="0.0" branch-rate="1.0">
+							<lines>
+								<line number="8" hits="0" branch="false"/>
+								<line number="9" hits="0" branch="false"/>
+							</lines>
+						</method>
+						<method name="buildHierarchy" signature="(Ljava/lang/Class;)Lcom/vanward/adana/hierarchy/Hierarchy;" line-rate="1.0" branch-rate="1.0">
+							<lines>
+								<line number="30" hits="21" branch="true"/>
+								<line number="31" hits="1" branch="false"/>
+								<line number="34" hits="20" branch="false"/>
+								<line number="35" hits="20" branch="false"/>
+								<line number="37" hits="20" branch="false"/>
+								<line number="39" hits="20" branch="true"/>
+								<line number="40" hits="4" branch="false"/>
+								<line number="42" hits="96" branch="true"/>
+								<line number="43" hits="48" branch="false"/>
+								<line number="44" hits="32" branch="false"/>
+								<line number="45" hits="32" branch="false"/>
+								<line number="47" hits="16" branch="false"/>
+							</lines>
+						</method>
+						<method name="buildHierarchy" signature="(Ljava/lang/String;)Lcom/vanward/adana/hierarchy/Hierarchy;" line-rate="1.0" branch-rate="1.0">
+							<lines>
+								<line number="19" hits="30" branch="false"/>
+								<line number="20" hits="15" branch="true"/>
+								<line number="21" hits="15" branch="false"/>
+							</lines>
+						</method>
+					</methods>
+					<lines>
+						<line number="8" hits="0" branch="false"/>
+						<line number="9" hits="0" branch="false"/>
+						<line number="19" hits="30" branch="false"/>
+						<line number="20" hits="15" branch="true"/>
+						<line number="21" hits="15" branch="false"/>
+						<line number="30" hits="21" branch="true"/>
+						<line number="31" hits="1" branch="false"/>
+						<line number="34" hits="20" branch="false"/>
+						<line number="35" hits="20" branch="false"/>
+						<line number="37" hits="20" branch="false"/>
+						<line number="39" hits="20" branch="true"/>
+						<line number="40" hits="4" branch="false"/>
+						<line number="42" hits="96" branch="true"/>
+						<line number="43" hits="48" branch="false"/>
+						<line number="44" hits="32" branch="false"/>
+						<line number="45" hits="32" branch="false"/>
+						<line number="47" hits="16" branch="false"/>
+					</lines>
+				</class>
+			</classes>
+		</package>
+		<package name="com.vanward.adana.hierarchy.ant" line-rate="0.84375" branch-rate="1.0" complexity="1.8666666666666667">
+			<classes>
+				<class name="com.vanward.adana.hierarchy.ant.HierarchyBuilderTask" filename="com/vanward/adana/hierarchy/ant/HierarchyBuilderTask.java" line-rate="0.8214285714285714" branch-rate="1.0" complexity="2.3">
+					<methods>
+						<method name="&lt;init&gt;" signature="()V" line-rate="1.0" branch-rate="1.0">
+							<lines>
+								<line number="32" hits="1" branch="false"/>
+								<line number="33" hits="1" branch="false"/>
+							</lines>
+						</method>
+						<method name="addConfiguredFileSet" signature="(Lorg/apache/tools/ant/types/FileSet;)V" line-rate="1.0" branch-rate="1.0">
+							<lines>
+								<line number="38" hits="1" branch="false"/>
+								<line number="39" hits="1" branch="false"/>
+							</lines>
+						</method>
+						<method name="addConfiguredReport" signature="(Lcom/vanward/adana/hierarchy/ant/Report;)V" line-rate="1.0" branch-rate="1.0">
+							<lines>
+								<line number="149" hits="1" branch="false"/>
+								<line number="150" hits="1" branch="false"/>
+							</lines>
+						</method>
+						<method name="execute" signature="()V" line-rate="0.8" branch-rate="1.0">
+							<lines>
+								<line number="58" hits="1" branch="false"/>
+								<line number="59" hits="1" branch="false"/>
+								<line number="60" hits="1" branch="false"/>
+								<line number="63" hits="6" branch="true"/>
+								<line number="64" hits="5" branch="false"/>
+								<line number="66" hits="1" branch="false"/>
+								<line number="68" hits="1" branch="false"/>
+								<line number="69" hits="0" branch="false"/>
+								<line number="70" hits="0" branch="false"/>
+								<line number="72" hits="1" branch="false"/>
+							</lines>
+						</method>
+						<method name="getQualifiedClassNames" signature="(Ljava/util/List;)[Ljava/lang/String;" line-rate="1.0" branch-rate="1.0">
+							<lines>
+								<line number="115" hits="1" branch="false"/>
+								<line number="117" hits="1" branch="false"/>
+								<line number="119" hits="2" branch="true"/>
+								<line number="121" hits="1" branch="false"/>
+								<line number="123" hits="1" branch="false"/>
+								<line number="124" hits="1" branch="false"/>
+								<line number="126" hits="6" branch="true"/>
+								<line number="128" hits="5" branch="false"/>
+								<line number="129" hits="5" branch="false"/>
+								<line number="132" hits="10" branch="false"/>
+								<line number="133" hits="5" branch="false"/>
+								<line number="135" hits="5" branch="false"/>
+								<line number="136" hits="5" branch="true"/>
+								<line number="137" hits="5" branch="false"/>
+								<line number="141" hits="1" branch="false"/>
+								<line number="143" hits="1" branch="false"/>
+							</lines>
+						</method>
+						<method name="handleReportCreation" signature="(Lcom/vanward/adana/hierarchy/report/BatchHierarchyXMLReport;)V" line-rate="0.6428571428571429" branch-rate="1.0">
+							<lines>
+								<line number="86" hits="1" branch="false"/>
+								<line number="88" hits="1" branch="true"/>
+								<line number="89" hits="1" branch="false"/>
+								<line number="90" hits="1" branch="false"/>
+								<line number="93" hits="0" branch="false"/>
+								<line number="97" hits="1" branch="false"/>
+								<line number="99" hits="0" branch="false"/>
+								<line number="100" hits="0" branch="false"/>
+								<line number="101" hits="0" branch="false"/>
+								<line number="102" hits="1" branch="true"/>
+								<line number="104" hits="1" branch="false"/>
+								<line number="105" hits="0" branch="false"/>
+								<line number="106" hits="1" branch="true"/>
+								<line number="107" hits="1" branch="false"/>
+							</lines>
+						</method>
+						<method name="init" signature="()V" line-rate="1.0" branch-rate="1.0">
+							<lines>
+								<line number="78" hits="1" branch="false"/>
+								<line number="79" hits="1" branch="false"/>
+							</lines>
+						</method>
+						<method name="isVerbose" signature="()Z" line-rate="0.0" branch-rate="1.0">
+							<lines>
+								<line number="155" hits="0" branch="false"/>
+							</lines>
+						</method>
+						<method name="setVerbose" signature="(Z)V" line-rate="1.0" branch-rate="1.0">
+							<lines>
+								<line number="161" hits="1" branch="false"/>
+								<line number="162" hits="1" branch="false"/>
+							</lines>
+						</method>
+						<method name="validate" signature="()V" line-rate="0.6" branch-rate="1.0">
+							<lines>
+								<line number="45" hits="1" branch="true"/>
+								<line number="46" hits="0" branch="false"/>
+								<line number="48" hits="1" branch="true"/>
+								<line number="49" hits="0" branch="false"/>
+								<line number="51" hits="1" branch="false"/>
+							</lines>
+						</method>
+					</methods>
+					<lines>
+						<line number="32" hits="1" branch="false"/>
+						<line number="33" hits="1" branch="false"/>
+						<line number="38" hits="1" branch="false"/>
+						<line number="39" hits="1" branch="false"/>
+						<line number="45" hits="1" branch="true"/>
+						<line number="46" hits="0" branch="false"/>
+						<line number="48" hits="1" branch="true"/>
+						<line number="49" hits="0" branch="false"/>
+						<line number="51" hits="1" branch="false"/>
+						<line number="58" hits="1" branch="false"/>
+						<line number="59" hits="1" branch="false"/>
+						<line number="60" hits="1" branch="false"/>
+						<line number="63" hits="6" branch="true"/>
+						<line number="64" hits="5" branch="false"/>
+						<line number="66" hits="1" branch="false"/>
+						<line number="68" hits="1" branch="false"/>
+						<line number="69" hits="0" branch="false"/>
+						<line number="70" hits="0" branch="false"/>
+						<line number="72" hits="1" branch="false"/>
+						<line number="78" hits="1" branch="false"/>
+						<line number="79" hits="1" branch="false"/>
+						<line number="86" hits="1" branch="false"/>
+						<line number="88" hits="1" branch="true"/>
+						<line number="89" hits="1" branch="false"/>
+						<line number="90" hits="1" branch="false"/>
+						<line number="93" hits="0" branch="false"/>
+						<line number="97" hits="1" branch="false"/>
+						<line number="99" hits="0" branch="false"/>
+						<line number="100" hits="0" branch="false"/>
+						<line number="101" hits="0" branch="false"/>
+						<line number="102" hits="1" branch="true"/>
+						<line number="104" hits="1" branch="false"/>
+						<line number="105" hits="0" branch="false"/>
+						<line number="106" hits="1" branch="true"/>
+						<line number="107" hits="1" branch="false"/>
+						<line number="115" hits="1" branch="false"/>
+						<line number="117" hits="1" branch="false"/>
+						<line number="119" hits="2" branch="true"/>
+						<line number="121" hits="1" branch="false"/>
+						<line number="123" hits="1" branch="false"/>
+						<line number="124" hits="1" branch="false"/>
+						<line number="126" hits="6" branch="true"/>
+						<line number="128" hits="5" branch="false"/>
+						<line number="129" hits="5" branch="false"/>
+						<line number="132" hits="10" branch="false"/>
+						<line number="133" hits="5" branch="false"/>
+						<line number="135" hits="5" branch="false"/>
+						<line number="136" hits="5" branch="true"/>
+						<line number="137" hits="5" branch="false"/>
+						<line number="141" hits="1" branch="false"/>
+						<line number="143" hits="1" branch="false"/>
+						<line number="149" hits="1" branch="false"/>
+						<line number="150" hits="1" branch="false"/>
+						<line number="155" hits="0" branch="false"/>
+						<line number="161" hits="1" branch="false"/>
+						<line number="162" hits="1" branch="false"/>
+					</lines>
+				</class>
+				<class name="com.vanward.adana.hierarchy.ant.Report" filename="com/vanward/adana/hierarchy/ant/Report.java" line-rate="1.0" branch-rate="1.0" complexity="1.0">
+					<methods>
+						<method name="&lt;init&gt;" signature="()V" line-rate="1.0" branch-rate="1.0">
+							<lines>
+								<line number="12" hits="1" branch="false"/>
+								<line number="13" hits="1" branch="false"/>
+							</lines>
+						</method>
+						<method name="getLocation" signature="()Ljava/lang/String;" line-rate="1.0" branch-rate="1.0">
+							<lines>
+								<line number="19" hits="1" branch="false"/>
+							</lines>
+						</method>
+						<method name="getName" signature="()Ljava/lang/String;" line-rate="1.0" branch-rate="1.0">
+							<lines>
+								<line number="26" hits="1" branch="false"/>
+							</lines>
+						</method>
+						<method name="setLocation" signature="(Ljava/lang/String;)V" line-rate="1.0" branch-rate="1.0">
+							<lines>
+								<line number="33" hits="1" branch="false"/>
+								<line number="34" hits="1" branch="false"/>
+							</lines>
+						</method>
+						<method name="setName" signature="(Ljava/lang/String;)V" line-rate="1.0" branch-rate="1.0">
+							<lines>
+								<line number="40" hits="1" branch="false"/>
+								<line number="41" hits="1" branch="false"/>
+							</lines>
+						</method>
+					</methods>
+					<lines>
+						<line number="12" hits="1" branch="false"/>
+						<line number="13" hits="1" branch="false"/>
+						<line number="19" hits="1" branch="false"/>
+						<line number="26" hits="1" branch="false"/>
+						<line number="33" hits="1" branch="false"/>
+						<line number="34" hits="1" branch="false"/>
+						<line number="40" hits="1" branch="false"/>
+						<line number="41" hits="1" branch="false"/>
+					</lines>
+				</class>
+			</classes>
+		</package>
+		<package name="com.vanward.adana.hierarchy.report" line-rate="0.9" branch-rate="1.0" complexity="2.4">
+			<classes>
+				<class name="com.vanward.adana.hierarchy.report.BatchHierarchyXMLReport" filename="com/vanward/adana/hierarchy/report/BatchHierarchyXMLReport.java" line-rate="0.9" branch-rate="1.0" complexity="2.4">
+					<methods>
+						<method name="&lt;init&gt;" signature="(Ljava/util/Date;[Lcom/vanward/adana/hierarchy/Hierarchy;)V" line-rate="1.0" branch-rate="1.0">
+							<lines>
+								<line number="27" hits="3" branch="false"/>
+								<line number="28" hits="3" branch="false"/>
+								<line number="29" hits="3" branch="false"/>
+								<line number="30" hits="3" branch="false"/>
+							</lines>
+						</method>
+						<method name="buildHierarchy" signature="()Lnu/xom/Element;" line-rate="1.0" branch-rate="1.0">
+							<lines>
+								<line number="48" hits="3" branch="false"/>
+								<line number="50" hits="11" branch="true"/>
+								<line number="51" hits="8" branch="false"/>
+								<line number="53" hits="8" branch="false"/>
+								<line number="54" hits="8" branch="false"/>
+								<line number="56" hits="8" branch="false"/>
+								<line number="58" hits="16" branch="true"/>
+								<line number="59" hits="8" branch="false"/>
+								<line number="60" hits="8" branch="false"/>
+								<line number="61" hits="8" branch="false"/>
+								<line number="62" hits="8" branch="false"/>
+								<line number="65" hits="8" branch="true"/>
+								<line number="66" hits="4" branch="false"/>
+								<line number="69" hits="3" branch="false"/>
+							</lines>
+						</method>
+						<method name="getRoot" signature="(Ljava/util/Date;)Lnu/xom/Element;" line-rate="1.0" branch-rate="1.0">
+							<lines>
+								<line number="37" hits="3" branch="false"/>
+								<line number="38" hits="3" branch="false"/>
+								<line number="39" hits="3" branch="false"/>
+								<line number="40" hits="3" branch="false"/>
+							</lines>
+						</method>
+						<method name="toIndentedXML" signature="()Ljava/lang/String;" line-rate="0.8181818181818182" branch-rate="1.0">
+							<lines>
+								<line number="76" hits="1" branch="false"/>
+								<line number="78" hits="1" branch="false"/>
+								<line number="79" hits="1" branch="false"/>
+								<line number="81" hits="1" branch="false"/>
+								<line number="83" hits="1" branch="false"/>
+								<line number="84" hits="1" branch="false"/>
+								<line number="87" hits="1" branch="false"/>
+								<line number="88" hits="1" branch="false"/>
+								<line number="89" hits="0" branch="false"/>
+								<line number="90" hits="0" branch="false"/>
+								<line number="92" hits="1" branch="false"/>
+							</lines>
+						</method>
+						<method name="toXML" signature="()Ljava/lang/String;" line-rate="0.7142857142857143" branch-rate="1.0">
+							<lines>
+								<line number="100" hits="2" branch="false"/>
+								<line number="102" hits="2" branch="false"/>
+								<line number="103" hits="2" branch="false"/>
+								<line number="106" hits="2" branch="false"/>
+								<line number="107" hits="0" branch="false"/>
+								<line number="108" hits="0" branch="false"/>
+								<line number="110" hits="2" branch="false"/>
+							</lines>
+						</method>
+					</methods>
+					<lines>
+						<line number="27" hits="3" branch="false"/>
+						<line number="28" hits="3" branch="false"/>
+						<line number="29" hits="3" branch="false"/>
+						<line number="30" hits="3" branch="false"/>
+						<line number="37" hits="3" branch="false"/>
+						<line number="38" hits="3" branch="false"/>
+						<line number="39" hits="3" branch="false"/>
+						<line number="40" hits="3" branch="false"/>
+						<line number="48" hits="3" branch="false"/>
+						<line number="50" hits="11" branch="true"/>
+						<line number="51" hits="8" branch="false"/>
+						<line number="53" hits="8" branch="false"/>
+						<line number="54" hits="8" branch="false"/>
+						<line number="56" hits="8" branch="false"/>
+						<line number="58" hits="16" branch="true"/>
+						<line number="59" hits="8" branch="false"/>
+						<line number="60" hits="8" branch="false"/>
+						<line number="61" hits="8" branch="false"/>
+						<line number="62" hits="8" branch="false"/>
+						<line number="65" hits="8" branch="true"/>
+						<line number="66" hits="4" branch="false"/>
+						<line number="69" hits="3" branch="false"/>
+						<line number="76" hits="1" branch="false"/>
+						<line number="78" hits="1" branch="false"/>
+						<line number="79" hits="1" branch="false"/>
+						<line number="81" hits="1" branch="false"/>
+						<line number="83" hits="1" branch="false"/>
+						<line number="84" hits="1" branch="false"/>
+						<line number="87" hits="1" branch="false"/>
+						<line number="88" hits="1" branch="false"/>
+						<line number="89" hits="0" branch="false"/>
+						<line number="90" hits="0" branch="false"/>
+						<line number="92" hits="1" branch="false"/>
+						<line number="100" hits="2" branch="false"/>
+						<line number="102" hits="2" branch="false"/>
+						<line number="103" hits="2" branch="false"/>
+						<line number="106" hits="2" branch="false"/>
+						<line number="107" hits="0" branch="false"/>
+						<line number="108" hits="0" branch="false"/>
+						<line number="110" hits="2" branch="false"/>
+					</lines>
+				</class>
+			</classes>
+		</package>
+	</packages>
+</coverage>
