@@ -1,0 +1,98 @@
+
+
+FUSEMETRICS
+
+
+
+
+1. WHAT IS IT?
+
+FuseMetrics assembles metrics from a variety of java source code/test/etc analysis tools, and creates a unified
+dashboard view of the information.
+
+It remembers the metrics over time, so it can create sparkline graphs of trends
+
+It looks at the sets of information on a per-class and per-package basis so it can create histogram charts from the
+"population" of classes in the application.
+
+
+2. HOW DO I USE IT?
+
+Configure the fusemetrics_config.xml file to specify where the .xml files for your project are located
+(NOTE - FuseMetrics will recurse through subdirectories), and also tell fusemetrics_config.xml which tools you have
+data for, and which sparkline graphs and histograms you'd like to make.
+
+General Rule
+A) every <metric> entry in the config file that includes an analysis="..." attribute will analyze the
+metric data and create a sparkline graph of the appropriate metric.
+
+B) every <metric> entry that includes a histogram="..." attribute will create a histogram based on the specified array
+of data.
+
+
+Lastly, your dashboard.tmpl  (or whatever your template file is) will be automatically converted into an html file by
+Groovy.  You specify in the template which metrics and which images you'd like to include.
+
+
+3. WHAT'S THE PHILOSOPHY?
+
+A) Every piece of data generated is stored in a general namespace, and naming conventions should be used to avoid/reduce
+collisions... and allow collisions where they are appropriate.
+B) Each type of analysis is managed via a tool-specific plugin.  This allows us to add new tools easily, allows us to
+ update tools easily, and allows us to have competing tools installed in parallel
+C) Some plugins create many metrics - use the ones you want, ignore the ones you don't.
+D) FuseMetrics automatically creates a persistence area to store metrics over time, so you don't have to
+
+
+
+4. WHAT IS TRICKY?
+
+* The Histogram plugins don't do any analysis - they just provide structure for the creation of a histogram graph for
+a specified dataset.  All the actual analysis occurs in the AnalysisPlugin
+* The Analysis plugins can, in some cases, overwrite each others generically named namespace entries.  Sometimes this
+   is a good thing...  Use a more plugin-specific name if you need to deal with collisions
+
+
+
+5. WHAT IS HELPFUL?
+
+* If you pass -d to FuseMetrics when you launch it, you'll see a data dump of every name in the namespace, and the
+corresponding value or array of values.  Use this to help you build your template file properly.
+
+* The metrics are processed in the order you enter the <metrics> records in the config file, so if you need certain
+files to run before others, that's how I would do it.
+
+* the example/ directory contains one or more example projects, with a properly configured fusemetrics_config.xml and
+dashboard.tmpl for you to mimic/copy/convert.
+
+
+
+6. WHAT'S NEXT?
+
+* It would be nice to store histogram data over time so one could have a way to see changes in populations over time.
+* Some would like the app to be more active - where you could filter and view histograms and sparklines of subsets of
+the overall project
+* More Plugins
+* Non-Java support - there's no technical reason why this couldn't be used to process metrics reports for other
+languages and systems.  Also, there's no intrinsic need for the data to be in .xml formats.
+
+
+7. HELP!
+
+try:  http://code.google.com/p/fusemetrics/
+
+or
+
+john.brothers@stelligent.com    /  johnbr@gmail.com
+
+
+
+
+
+
+
+
+
+
+
+

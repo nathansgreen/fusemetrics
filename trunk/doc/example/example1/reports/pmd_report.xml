@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd version="3.9" timestamp="2006-12-19T22:23:42.750" elapsedTime="1s">
+<file name="C:\dev\projects\projects-3.2\sligo\src\java\org\discoblog\words\bizobj\IDefinition.java">
+<violation line="12" rule="ShortVariable" ruleset="Naming Rules" package="org.discoblog.words.bizobj" class="IDefinition" method="setId" externalInfoUrl="http://pmd.sourceforge.net/rules/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like id
+</violation>
+<violation line="21" rule="ShortVariable" ruleset="Naming Rules" package="org.discoblog.words.bizobj" class="IDefinition" method="setExampleSentence" externalInfoUrl="http://pmd.sourceforge.net/rules/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like ex
+</violation>
+</file>
+<file name="C:\dev\projects\projects-3.2\sligo\src\java\org\discoblog\words\bizobj\ISynonym.java">
+<violation line="12" rule="ShortVariable" ruleset="Naming Rules" package="org.discoblog.words.bizobj" class="ISynonym" method="setId" externalInfoUrl="http://pmd.sourceforge.net/rules/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like id
+</violation>
+</file>
+<file name="C:\dev\projects\projects-3.2\sligo\src\java\org\discoblog\words\bizobj\IWord.java">
+<violation line="14" rule="ShortVariable" ruleset="Naming Rules" package="org.discoblog.words.bizobj" class="IWord" method="setId" externalInfoUrl="http://pmd.sourceforge.net/rules/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like id
+</violation>
+</file>
+<file name="C:\dev\projects\projects-3.2\sligo\src\java\org\discoblog\words\bizobj\impl\Definition.java">
+<violation line="17" rule="AvoidFieldNameMatchingTypeName" ruleset="Naming Rules" package="org.discoblog.words.bizobj.impl" class="Definition" externalInfoUrl="http://pmd.sourceforge.net/rules/naming.html#AvoidFieldNameMatchingTypeName" priority="3">
+It is somewhat confusing to have a field name matching the declaring class name
+</violation>
+<violation line="18" rule="ShortVariable" ruleset="Naming Rules" package="org.discoblog.words.bizobj.impl" class="Definition" externalInfoUrl="http://pmd.sourceforge.net/rules/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like id
+</violation>
+<violation line="65" rule="ShortVariable" ruleset="Naming Rules" package="org.discoblog.words.bizobj.impl" class="Definition" method="setExampleSentence" externalInfoUrl="http://pmd.sourceforge.net/rules/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like ex
+</violation>
+<violation line="79" rule="ShortVariable" ruleset="Naming Rules" package="org.discoblog.words.bizobj.impl" class="Definition" method="setId" externalInfoUrl="http://pmd.sourceforge.net/rules/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like id
+</violation>
+</file>
+<file name="C:\dev\projects\projects-3.2\sligo\src\java\org\discoblog\words\bizobj\impl\Synonym.java">
+<violation line="16" rule="ShortVariable" ruleset="Naming Rules" package="org.discoblog.words.bizobj.impl" class="Synonym" externalInfoUrl="http://pmd.sourceforge.net/rules/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like id
+</violation>
+<violation line="48" rule="ShortVariable" ruleset="Naming Rules" package="org.discoblog.words.bizobj.impl" class="Synonym" method="setId" externalInfoUrl="http://pmd.sourceforge.net/rules/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like id
+</violation>
+</file>
+<file name="C:\dev\projects\projects-3.2\sligo\src\java\org\discoblog\words\bizobj\impl\Word.java">
+<violation line="22" rule="ShortVariable" ruleset="Naming Rules" package="org.discoblog.words.bizobj.impl" class="Word" externalInfoUrl="http://pmd.sourceforge.net/rules/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like id
+</violation>
+<violation line="84" rule="ShortVariable" ruleset="Naming Rules" package="org.discoblog.words.bizobj.impl" class="Word" method="setId" externalInfoUrl="http://pmd.sourceforge.net/rules/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like id
+</violation>
+</file>
+<file name="C:\dev\projects\projects-3.2\sligo\src\java\org\discoblog\words\dao\exception\CreateException.java">
+<violation line="21" rule="ShortVariable" ruleset="Naming Rules" package="org.discoblog.words.dao.exception" class="CreateException" externalInfoUrl="http://pmd.sourceforge.net/rules/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like s
+</violation>
+</file>
+<file name="C:\dev\projects\projects-3.2\sligo\src\java\org\discoblog\words\dao\exception\FindException.java">
+<violation line="32" rule="ShortVariable" ruleset="Naming Rules" package="org.discoblog.words.dao.exception" class="FindException" externalInfoUrl="http://pmd.sourceforge.net/rules/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like s
+</violation>
+</file>
+<file name="C:\dev\projects\projects-3.2\sligo\src\java\org\discoblog\words\dao\exception\RemoveException.java">
+<violation line="21" rule="ShortVariable" ruleset="Naming Rules" package="org.discoblog.words.dao.exception" class="RemoveException" externalInfoUrl="http://pmd.sourceforge.net/rules/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like s
+</violation>
+</file>
+<file name="C:\dev\projects\projects-3.2\sligo\src\java\org\discoblog\words\dao\exception\UpdateException.java">
+<violation line="21" rule="ShortVariable" ruleset="Naming Rules" package="org.discoblog.words.dao.exception" class="UpdateException" externalInfoUrl="http://pmd.sourceforge.net/rules/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like s
+</violation>
+</file>
+<file name="C:\dev\projects\projects-3.2\sligo\src\java\org\discoblog\words\dao\impl\spring\SpringWordDAOImpl.java">
+<violation line="70" rule="UseCollectionIsEmpty" ruleset="Design Rules" package="org.discoblog.words.dao.impl.spring" class="Anonymous$1" method="doInHibernate" externalInfoUrl="http://pmd.sourceforge.net/rules/design.html#UseCollectionIsEmpty" priority="3">
+Substitute calls to size() == 0 (or size() != 0) with calls to isEmpty()
+</violation>
+</file>
+<file name="C:\dev\projects\projects-3.2\sligo\src\java\org\discoblog\words\dbunit\generator\DbUnitSeedFileGenerator.java">
+<violation line="2" rule="UseSingleton" ruleset="Design Rules" package="org.discoblog.words.dbunit.generator" externalInfoUrl="http://pmd.sourceforge.net/rules/design.html#UseSingleton" priority="3">
+All methods are static.  Consider using Singleton instead.  Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+</violation>
+<violation line="20" rule="CloseResource" ruleset="Design Rules" package="org.discoblog.words.dbunit.generator" class="DbUnitSeedFileGenerator" method="main" externalInfoUrl="http://pmd.sourceforge.net/rules/design.html#CloseResource" priority="3">
+Ensure that resources like this Connection object are closed after use
+</violation>
+</file>
+<file name="C:\dev\projects\projects-3.2\sligo\src\java\org\discoblog\words\dbunit\generator\PartialSeedFileGenerator.java">
+<violation line="2" rule="UseSingleton" ruleset="Design Rules" package="org.discoblog.words.dbunit.generator" externalInfoUrl="http://pmd.sourceforge.net/rules/design.html#UseSingleton" priority="3">
+All methods are static.  Consider using Singleton instead.  Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+</violation>
+<violation line="21" rule="CloseResource" ruleset="Design Rules" package="org.discoblog.words.dbunit.generator" class="PartialSeedFileGenerator" method="main" externalInfoUrl="http://pmd.sourceforge.net/rules/design.html#CloseResource" priority="3">
+Ensure that resources like this Connection object are closed after use
+</violation>
+</file>
+</pmd>

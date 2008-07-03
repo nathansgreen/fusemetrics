@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite name="test.org.discoblog.words.ComponentTestSuite" tests="12" failures="0" errors="0" time="15.859">
+  <properties>
+    <property name="java.vendor" value="Sun Microsystems Inc."></property>
+    <property name="sun.management.compiler" value="HotSpot Client Compiler"></property>
+    <property name="cargo-jar" value="cargo-core-uberjar-0.8.jar"></property>
+    <property name="os.name" value="Windows XP"></property>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.5.0_06\jre\lib\rt.jar;C:\Program Files\Java\jdk1.5.0_06\jre\lib\i18n.jar;C:\Program Files\Java\jdk1.5.0_06\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.5.0_06\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.5.0_06\jre\lib\jce.jar;C:\Program Files\Java\jdk1.5.0_06\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.5.0_06\jre\classes"></property>
+    <property name="sun.desktop" value="windows"></property>
+    <property name="java.vm.specification.vendor" value="Sun Microsystems Inc."></property>
+    <property name="ant.home" value="C:\dev\tools\ant\apache-ant-1.6.5"></property>
+    <property name="cargo-ant-jar" value="cargo-ant-0.8.jar"></property>
+    <property name="jdepend-jar" value="jdepend-2.7.jar"></property>
+    <property name="java.runtime.version" value="1.5.0_06-b05"></property>
+    <property name="distdir" value="dist"></property>
+    <property name="user.name" value="Andy.Glover"></property>
+    <property name="tomcatdir" value="target/tomcat"></property>
+    <property name="user.language" value="en"></property>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.5.0_06\jre\bin"></property>
+    <property name="ant.project.name" value="sligo"></property>
+    <property name="java.version" value="1.5.0_06"></property>
+    <property name="user.timezone" value=""></property>
+    <property name="sun.arch.data.model" value="32"></property>
+    <property name="tomcat-installer-url" value="http://www.apache.org/dist/tomcat/tomcat-5/v5.0.28/bin/jakarta-tomcat-5.0.28.zip"></property>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.5.0_06\jre\lib\endorsed"></property>
+    <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86"></property>
+    <property name="sun.jnu.encoding" value="Cp1252"></property>
+    <property name="file.encoding.pkg" value="sun.io"></property>
+    <property name="file.separator" value="\"></property>
+    <property name="java.specification.name" value="Java Platform API Specification"></property>
+    <property name="js-jar" value="js-1.5R4.1.jar"></property>
+    <property name="java.class.version" value="49.0"></property>
+    <property name="user.country" value="US"></property>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.5.0_06\jre"></property>
+    <property name="java.vm.info" value="mixed mode"></property>
+    <property name="tomcat.passwrd" value=""></property>
+    <property name="testclassesdir" value="target/test-classes"></property>
+    <property name="ant.file" value="c:\dev\projects\projects-3.2\sligo\build.xml"></property>
+    <property name="os.version" value="5.1"></property>
+    <property name="path.separator" value=";"></property>
+    <property name="java.vm.version" value="1.5.0_06-b05"></property>
+    <property name="httpunit-jar" value="httpunit-1.5.4.jar"></property>
+    <property name="user.variant" value=""></property>
+    <property name="ant.library.dir" value="C:\dev\tools\ant\apache-ant-1.6.5\lib"></property>
+    <property name="wardir" value="./target"></property>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"></property>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"></property>
+    <property name="testreportdir" value="target/test-reports"></property>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"></property>
+    <property name="Junit.present" value="true"></property>
+    <property name="tomcat.username" value="admin"></property>
+    <property name="defaulttargetdir" value="target"></property>
+    <property name="user.home" value="C:\Documents and Settings\andy.glover"></property>
+    <property name="tomcat-refid" value="tmptmct01"></property>
+    <property name="ant.file.sligo" value="C:\dev\projects\projects-3.2\sligo\build.xml"></property>
+    <property name="java.specification.vendor" value="Sun Microsystems Inc."></property>
+    <property name="neko-jar" value="nekohtml-0.8.1.jar"></property>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.5.0_06\jre\bin;.;C:\WINDOWS\system32;C:\WINDOWS;C:\cygwin\usr\local\bin;C:\cygwin\bin;C:\cygwin\bin;C:\cygwin\usr\X11R6\bin;c:\dev\ruby\bin;c:\WINDOWS\system32;c:\WINDOWS;c:\WINDOWS\System32\Wbem;c:\Program Files\QuickTime\QTSystem\;c:\Program Files\Common Files\GTK\2.0\bin;c:\Program Files\Microsoft SQL Server\80\Tools\Binn\;c:\Program Files\Perforce"></property>
+    <property name="java.vendor.url" value="http://java.sun.com/"></property>
+    <property name="java.vm.vendor" value="Sun Microsystems Inc."></property>
+    <property name="xmlunit-jar" value="xmlunit-1.0.jar"></property>
+    <property name="java.runtime.name" value="Java(TM) 2 Runtime Environment, Standard Edition"></property>
+    <property name="java.class.path" value="C:\dev\projects\projects-3.2\sligo\target\lib\c3p0-0.8.4.5.jar;C:\dev\projects\projects-3.2\sligo\target\lib\cargo-ant-0.8.jar;C:\dev\projects\projects-3.2\sligo\target\lib\cargo-core-uberjar-0.8.jar;C:\dev\projects\projects-3.2\sligo\target\lib\cglib-full-2.0.jar;C:\dev\projects\projects-3.2\sligo\target\lib\commons-beanutils-1.6.1.jar;C:\dev\projects\projects-3.2\sligo\target\lib\commons-cli-1.0.jar;C:\dev\projects\projects-3.2\sligo\target\lib\commons-codec-1.3.jar;C:\dev\projects\projects-3.2\sligo\target\lib\commons-collections-2.1.jar;C:\dev\projects\projects-3.2\sligo\target\lib\commons-dbcp-1.2.jar;C:\dev\projects\projects-3.2\sligo\target\lib\commons-digester-1.5.jar;C:\dev\projects\projects-3.2\sligo\target\lib\commons-httpclient-3.0.jar;C:\dev\projects\projects-3.2\sligo\target\lib\commons-lang-1.0.1.jar;C:\dev\projects\projects-3.2\sligo\target\lib\commons-logging-1.0.3.jar;C:\dev\projects\projects-3.2\sligo\target\lib\commons-pool-1.2.jar;C:\dev\projects\projects-3.2\sligo\target\lib\crimson-1.1.3.jar;C:\dev\projects\projects-3.2\sligo\target\lib\dbunit-2.1.jar;C:\dev\projects\projects-3.2\sligo\target\lib\dom4j-1.4.jar;C:\dev\projects\projects-3.2\sligo\target\lib\ehcache-0.7.jar;C:\dev\projects\projects-3.2\sligo\target\lib\groovy-all-1.0-JSR-06.jar;C:\dev\projects\projects-3.2\sligo\target\lib\hibernate-2.1.3.jar;C:\dev\projects\projects-3.2\sligo\target\lib\hsqldb-1.8.0.5.jar;C:\dev\projects\projects-3.2\sligo\target\lib\httpunit-1.5.4.jar;C:\dev\projects\projects-3.2\sligo\target\lib\jcs-1.0-dev.jar;C:\dev\projects\projects-3.2\sligo\target\lib\jdbc-2.0-stdext.jar;C:\dev\projects\projects-3.2\sligo\target\lib\jdepend-2.7.jar;C:\dev\projects\projects-3.2\sligo\target\lib\js-1.5R4.1.jar;C:\dev\projects\projects-3.2\sligo\target\lib\jta-1.jar;C:\dev\projects\projects-3.2\sligo\target\lib\junit-3.8.1.jar;C:\dev\projects\projects-3.2\sligo\target\lib\junitperf-1.8.jar;C:\dev\projects\projects-3.2\sligo\target\lib\jwebunit-1.2.jar;C:\dev\projects\projects-3.2\sligo\target\lib\log4j-1.2.7.jar;C:\dev\projects\projects-3.2\sligo\target\lib\nekohtml-0.8.1.jar;C:\dev\projects\projects-3.2\sligo\target\lib\odmg-3.0.jar;C:\dev\projects\projects-3.2\sligo\target\lib\spring-1.0.2.jar;C:\dev\projects\projects-3.2\sligo\target\lib\words-groovy.jar;C:\dev\projects\projects-3.2\sligo\target\lib\xerces-2.4.0.jar;C:\dev\projects\projects-3.2\sligo\target\lib\xml-apis-2.0.2.jar;C:\dev\projects\projects-3.2\sligo\target\lib\xmlunit-1.0.jar;C:\dev\projects\projects-3.2\sligo\target\test-classes;C:\dev\projects\projects-3.2\sligo\target\classes;C:\dev\java\5.0\lib\ext\QTJava.zip;C:\dev\tools\ant\apache-ant-1.6.5\lib\junit-3.8.1.jar;C:\dev\tools\ant\apache-ant-1.6.5\lib\ant-launcher.jar;C:\dev\tools\ant\apache-ant-1.6.5\lib\ant.jar;C:\dev\tools\ant\apache-ant-1.6.5\lib\ant-junit.jar"></property>
+    <property name="ant.version" value="Apache Ant version 1.6.5 compiled on June 2 2005"></property>
+    <property name="junit-jar" value="junit-3.8.1.jar"></property>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"></property>
+    <property name="java.vm.specification.version" value="1.0"></property>
+    <property name="sun.cpu.endian" value="little"></property>
+    <property name="warfile" value="words.war"></property>
+    <property name="sun.os.patch.level" value="Service Pack 2"></property>
+    <property name="jwebunit-jar" value="jwebunit-1.2.jar"></property>
+    <property name="java.io.tmpdir" value="C:\DOCUME~1\ANDY~1.GLO\LOCALS~1\Temp\"></property>
+    <property name="java.vendor.url.bug" value="http://java.sun.com/cgi-bin/bugreport.cgi"></property>
+    <property name="repo-base" value="http://www.thediscoblog.com/repo"></property>
+    <property name="hsql-jar" value="hsqldb-1.8.0.5.jar"></property>
+    <property name="os.arch" value="x86"></property>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"></property>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.5.0_06\jre\lib\ext"></property>
+    <property name="user.dir" value="C:\dev\projects\projects-3.2\sligo"></property>
+    <property name="libdir" value="target/lib"></property>
+    <property name="line.separator" value="
+"></property>
+    <property name="java.vm.name" value="Java HotSpot(TM) Client VM"></property>
+    <property name="basedir" value="."></property>
+    <property name="ant.java.version" value="1.5"></property>
+    <property name="classesdir" value="target/classes"></property>
+    <property name="file.encoding" value="Cp1252"></property>
+    <property name="groovy-jar" value="groovy-all-1.0-JSR-06.jar"></property>
+    <property name="java.specification.version" value="1.5"></property>
+  </properties>
+  <testcase name="testUpdateWordSpelling" classname="test.org.discoblog.words.dao.spring.DefaultSpringWordDAOImplTest" time="1.437"></testcase>
+  <testcase name="testUpdateWordDefinition" classname="test.org.discoblog.words.dao.spring.DefaultSpringWordDAOImplTest" time="0.188"></testcase>
+  <testcase name="testRemoveWord" classname="test.org.discoblog.words.dao.spring.DefaultSpringWordDAOImplTest" time="0.109"></testcase>
+  <testcase name="testFindNotNull" classname="test.org.discoblog.words.dao.spring.DefaultSpringWordDAOImplTest" time="0.094"></testcase>
+  <testcase name="testFindVerifyDefinitionsSize" classname="test.org.discoblog.words.dao.spring.DefaultSpringWordDAOImplTest" time="0.172"></testcase>
+  <testcase name="testFindVerifySynonymsSize" classname="test.org.discoblog.words.dao.spring.DefaultSpringWordDAOImplTest" time="0.094"></testcase>
+  <testcase name="testFindVerifyDefinition" classname="test.org.discoblog.words.dao.spring.DefaultSpringWordDAOImplTest" time="0.093"></testcase>
+  <testcase name="testCreate" classname="test.org.discoblog.words.dao.spring.DefaultSpringWordDAOImplTest" time="0.094"></testcase>
+  <testcase name="testFindVerifyDefinition" classname="test.org.discoblog.words.dao.perf.WordDAOImplLoadTest" time="0.094"></testcase>
+  <testcase name="testFindVerifyDefinition" classname="test.org.discoblog.words.dao.perf.WordDAOImplTimedTest" time="0.172"></testcase>
+  <testcase name="testAfferentness" classname="test.org.discoblog.words.metrics.AfferentCouplingTest" time="11.906"></testcase>
+  <testcase name="testReportXML" classname="test.org.discoblog.words.report.WordReportTest" time="1.328"></testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
