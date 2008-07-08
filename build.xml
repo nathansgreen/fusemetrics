@@ -78,7 +78,7 @@
   <!-- Project Libraries -->
   
   <path id="library.junit.classpath">
-    <pathelement location="/Users/johnbr/dev/lib/junit-3.8.1/junit.jar"/>
+    <pathelement location="${basedir}/lib/junit-3.8.1.jar"/>
   </path>
   
   <path id="library.xom.classpath">
