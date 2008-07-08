@@ -184,11 +184,12 @@
   <target name="clean.module.fusemetrics" description="cleanup module">
     <delete dir="${fusemetrics.output.dir}"/>
     <delete dir="${fusemetrics.testoutput.dir}"/>
+	<delete dir="${basedir}/dist" />
   </target>
 
    <target name="jar">
-      <mkdir dir="dist" />
-      <jar destfile="fusemetrics.jar" basedir="${fusemetrics.output.dir}" />
+      <mkdir dir="${basedir}/dist" />
+      <jar destfile="${basedir}/dist/fusemetrics.jar" basedir="${fusemetrics.output.dir}" />
    </target>
 
   <target name="init" description="Build initialization">
