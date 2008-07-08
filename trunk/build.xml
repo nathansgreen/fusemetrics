@@ -97,7 +97,7 @@
   <!-- Global Libraries -->
   
   <path id="library.groovy.classpath">
-    <pathelement location="/usr/local/groovy-1.5.4/embeddable/groovy-all-1.5.4.jar"/>
+    <pathelement location="${basedir}/lib/groovy-all-1.5.4.jar"/>
   </path>
   
   
@@ -187,7 +187,8 @@
   </target>
 
    <target name="jar">
-      <jar destfile="dist/fusemetrics.jar"  basedir="${fusemetrics.output.dir}" />
+      <mkdir dir="dist" />
+      <jar destfile="fusemetrics.jar" basedir="${fusemetrics.output.dir}" />
    </target>
 
   <target name="init" description="Build initialization">
