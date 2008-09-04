@@ -3,7 +3,7 @@ Our chief weapon is the element of surprise.. surprise and fear.
 
 PART 1: ANALYSIS
 
-Scan directories for xml files to identify metric values. It then  activates the various
+Scans directories for xml files to identify metric values. It then  activates the various
 plugins with the appropriate information to do their work (specifically, to analyze the files and come up with metrics
 score(s).  There are two kinds of analysis:
 a) Single number - for example average code complexity
