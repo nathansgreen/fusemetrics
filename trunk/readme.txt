@@ -1,4 +1,7 @@
-Our chief weapon is the element of surprise.. surprise and fear.
+PART 0: HOW TO BUILD
+1) Create a property file, local.properties in the project root
+2) Set jdk.home.1.5=C:/tools/Java/jdk1.5.0_10, to your local JDK
+3) Type ant
 
 
 PART 1: ANALYSIS
