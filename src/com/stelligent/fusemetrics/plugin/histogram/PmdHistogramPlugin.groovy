@@ -10,7 +10,7 @@ class PmdHistogramPlugin extends HistogramBase implements HistogramPlugin {
 
    public PmdHistogramPlugin() {
 
-      _ranges = [ 1..2, 2..4, 5..9, 10..19, 20..49, 50..50]
+      _ranges = [ 1..2, 3..4, 5..9, 10..19, 20..49, 50..50]
       _labels = [ '< 3', '< 5', '< 10', '< 20', '< 50', '50 +']
 
    }
