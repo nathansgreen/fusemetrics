@@ -1,0 +1,3 @@
+Fusemetrics takes the .xml output from PMD, CPD, JUnit, JDepend, FindBugs, Clover, Cobertura and several other metrics/analysis tools, and creates a unified dashboard view of the top level metrics.  In addition, it "remembers" how these values change over time and creates sparkline graphs to see the ongoing evolution of the overall project metrics.  Lastly, where available, it analyzes the metrics across the complete set of classes and packages, and creates various histograms describing the overall class/package population, in terms of size, complexity, coverage, etc.
+
+Fusemetrics is written in Groovy, and uses Nu.Xom and JFreeChart to assist in processing the xml and generating the charts.
